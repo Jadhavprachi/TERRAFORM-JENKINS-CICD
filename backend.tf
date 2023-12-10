@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "myawsbucket1007"
+    bucket         = "myproject-cicd"
     key            = "my-terraform-environment/main"
-    region         = "ap-south-1"
-    dynamodb_table = "anilDBTable"
+    region         = "us-east-1"
+    dynamodb_table = "myproject-cicd-dynamo-db-table""
   }
 }
